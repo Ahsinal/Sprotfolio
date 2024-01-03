@@ -8,13 +8,19 @@ const Intro = () => {
 
   useEffect(()=>{
     const textElement=textRef.current;
+    let typed;
     if(textElement){
-      init(textElement, { 
+      typed=init(textElement, { 
         backDelay:1500, 
         showCursor:true,
-        strings: ['Associate', 'Engineer','Testing Automation'],
+        strings: ['Associate', 'Engineer','Tester'],
       });
     }
+      return ()=>{
+        if(typed ){
+          typed.destroy();
+        }
+      };
   },[]);
   return (
     <div className='intro' id='intro'>
@@ -29,6 +35,8 @@ const Intro = () => {
           <h2>Hi There, I'm</h2>
           <h1>Sagar Parajuli</h1>
           <h3>QA <span ref={textRef}></span></h3>
+          <p>
+"Enhancing software quality with meticulous testing and innovative solutions. Committed to ensuring reliability and functionality for superior user experiences. Dedicated to excellence in every code line."</p>
 
           <div className="social-links">  
             <Facebook className='icon'/>
@@ -39,8 +47,8 @@ const Intro = () => {
           </div>
 
           <div className="buttonContainer">
-            <a href=""><button>Download CV</button></a>
-            <button>Guidance</button>
+            <a href="assets/cv.pdf" download="cv.pdf"><button className='left'>Download CV</button></a>
+            <button className='right'>Guidance</button>
           </div>
         </div>
         {/* <a href="#protfolio">
