@@ -1,4 +1,4 @@
-import './intro.scss'
+import './profile.scss'
 import { init } from 'ityped'
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 import {Facebook, GitHub, LinkedIn, Reddit, WhatsApp} from '@mui/icons-material';
@@ -23,7 +23,7 @@ const Intro = () => {
       };
   },[]);
   return (
-    <div className='intro' id='intro'>
+    <div className='intro' id='profile'>
       <div className="left">
         <div className="imgContainer">
           <img src="assets/sp2.png" alt="" />
