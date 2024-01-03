@@ -1,5 +1,5 @@
 import './navbar.scss'
-import {Person,Mail} from "@mui/icons-material"
+import {Person,Mail, LocationCityRounded } from "@mui/icons-material"
 const Navbar = ({menuOpen,setMenuOpen}) => {
   return (
     <div className={'navbarr ' + (menuOpen && "active")}>
@@ -8,12 +8,17 @@ const Navbar = ({menuOpen,setMenuOpen}) => {
           <a href="#intro" className='logo'>SP</a>
           <div className="itemContainer">
             <Person className='icon'/>
-            <span>98426000000</span>
+            <span>+1 437-878-5778</span>
           </div>
 
           <div className="itemContainer">
             <Mail className='icon'/>
-            <span>sp@gmail.com</span>
+            <span>parajuli.sagar1998@gmail.com</span>
+          </div>
+
+          <div className="itemContainer">
+            <LocationCityRounded className='icon'/>
+            <span>30 Nuffled Drive,Toronto</span>
           </div>
         </div>
 
