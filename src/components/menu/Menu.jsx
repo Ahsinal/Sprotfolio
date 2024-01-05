@@ -22,7 +22,7 @@ const Menu = ({menuOpen,setMenuOpen}) => {
         {
             id:4,
             element:"Projects",
-            href:"works",
+            href:"projects",
             icon:<Work/>
         },
         {
@@ -45,8 +45,8 @@ const Menu = ({menuOpen,setMenuOpen}) => {
         },
         {
             id:8,
-            element:"QA Guidelines",
-            href:"contact",
+            element:"QA Guidelines ",
+            href:"guidance",
             icon:<TipsAndUpdates/>
         },
     ];  

@@ -56,7 +56,7 @@ const Protfolio = () => {
 
 
   return (
-    <div className='protfolio' id='protfolio'>
+    <div className='protfolio' id='portfolio'>
       <h1>Portfolio</h1>
       <ul>
         {

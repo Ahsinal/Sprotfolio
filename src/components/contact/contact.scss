@@ -1,3 +1,160 @@
+.background-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://img.freepik.com/free-photo/leh-ladak-flag-faith-mountain_1150-11110.jpg?size=626&ext=jpg&ga=GA1.1.595457472.1704101508&semt=sph") no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px); /* Apply blur to the background */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent overlay */
+  }
 .contact{
-    background-color: lightblue;
+    position: relative;
+    min-height: 100%;
+    padding: 50px 60px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://img.freepik.com/free-photo/leh-ladak-flag-faith-mountain_1150-11110.jpg?size=626&ext=jpg&ga=GA1.1.595457472.1704101508&semt=sph") no-repeat;
+    background-size: cover;
+   
+
+    .content{
+        // min-width: 800px;
+        width: 100%;
+        // height: auto;
+        text-align: center;
+        z-index: 2;
+
+        h2{
+            font-size: 32px;
+            font-weight: 500;
+            color: rgb(5, 26, 122);
+        }
+
+        p{
+            color: rgb(43, 38, 38);
+            font-size: 12px;
+        }
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        .containerInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .box{
+                position: relative;
+                padding:20px 0 ;
+                display: flex;
+
+                .icon{
+                    min-width: 40px;
+                    height: 40px;
+                    background-color:white ;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: rgb(31,37,128);
+                }
+
+                .text{
+                   display: flex;
+                   margin-left: 20px;
+                   flex-direction: column;
+                   font-weight: 300;
+                   color: white;
+
+                   h3{
+                    font-weight: 500;
+                    color: white;
+                   }
+                }
+            }
+        }
+
+        .contactForm{
+            width: 50%;
+            height: 100%;
+            padding: 40px;
+            background-color: white;
+
+            h2{
+                font-size: 18px;
+                color: #333;
+                font-weight: 500;
+                color:rgb(31,37,128)
+            }
+
+            .inputBox{
+                position: relative;
+                width: 100%;
+                margin: 10px 0;
+                // background-color: red;
+
+                input,textarea{
+                    width: 100%;
+                    padding: 5px 0;
+                    margin: 10px 0;
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid rgb(140, 134, 134) ;
+                    resize: none;
+                }
+                input:focus ~ span,
+                input:valid ~ span{
+                    color: #e91063;
+                    font-size: 12px;
+                    transform: translateY(-18px);
+                }
+                span{
+                    position: absolute;
+                    left: 0;
+                    padding: 5px 0;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #666;
+                }
+                textarea:focus ~ span,
+                textarea:valid ~ span{
+                    color: #e91063;
+                    font-size: 12px;
+                    transform: translateY(-18px);
+                }
+                
+                input[type="submit"]{
+                    width: 100px;
+                    border: none;
+                    padding: 10px ;
+                    cursor: pointer;
+                    color: white;
+                    background-color: rgba(31,37,128 ,0.9);
+
+                    &:hover{
+                        background-color: rgb(31,37,128);
+                    }
+                }
+            }
+        }
+    }
 }

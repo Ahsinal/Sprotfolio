@@ -1,4 +1,4 @@
-import './works.scss'
+import './projects.scss'
 import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -51,7 +51,7 @@ const Works = () => {
     : setCurrentSlide(currentSlide<data.length-1 ? currentSlide+1 : 0)
   };
   return (
-    <div className='works' id='works'>
+    <div className='works' id='projects'>
       <div className="slider" style={{transform:`translateX(-${currentSlide * 90}vw)`}}>
        {data.map((d)=>(
          <div className="container">
