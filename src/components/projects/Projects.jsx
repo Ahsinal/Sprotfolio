@@ -51,7 +51,7 @@ const Works = () => {
     : setCurrentSlide(currentSlide<data.length-1 ? currentSlide+1 : 0)
   };
   return (
-    <div className='works' id='projects'>
+    <div className='projects' id='projects'>
       <div className="slider" style={{transform:`translateX(-${currentSlide * 90}vw)`}}>
        {data.map((d)=>(
          <div className="container">

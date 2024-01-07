@@ -2,55 +2,51 @@
 import { useEffect, useState } from 'react';
 import Protfoliolist from '../protfolioList/Protfoliolist';
 import './protfolio.scss'
-import{manualProtfolio,
-  automationProtfolio,
-  scrumProtfolio,
-  cypressProtfolio,
-  testcasesProtfolio} from '../../data';
+import{zebecProtfolio,swiftProtfolio,lvfProtfolio} from '../../data';
 
 const Protfolio = () => {
 
-  const[selected,setSelected]=useState("manual")
+  const[selected,setSelected]=useState("zebec")
   const[data,setData]=useState([]);
 
   const list =[
     {
-      id:"manual",
-      title:"Manual"
+      id:"zebec",
+      title:"Zebec"
     },
     {
-      id:"automation",
-      title:"Automation"
+      id:"swift",
+      title:"Swift"
     },
     {
-      id:"scrum",
-      title:"Scrum"
+      id:"lvf",
+      title:"LVF"
     },
-    {
-      id:"cypress",
-      title:"Cypress"
-    },
-    {
-      id:"test-cases",
-      title:"Test Cases"
-    }
+    // {
+    //   id:"cypress",
+    //   title:"Cypress"
+    // },
+    // {
+    //   id:"test-cases",
+    //   title:"Test Cases"
+    // }
   ];
 
   //useeffect
   useEffect(()=>{
     switch(selected){
-      case "manual":setData(manualProtfolio);
+      case "zebec":setData(zebecProtfolio);
       break;
-      case "automation":setData(automationProtfolio);
+      case "swift":setData(swiftProtfolio);
       break;
-      case "scrum":setData(scrumProtfolio);
+      case "lvf":setData(lvfProtfolio);
       break;
-      case "cypress":setData(cypressProtfolio);
-      break;
-      case "test-cases":setData(testcasesProtfolio);
-      break;
+      // case "cypress":setData(cypressProtfolio);
+      // break;
+      // case "test-cases":setData(testcasesProtfolio);
+      // break;
       default:
-        setData(manualProtfolio);
+        setData(zebecProtfolio);
     }
   },[selected])
 

@@ -1,4 +1,4 @@
-export const manualProtfolio=[
+export const zebecProtfolio=[
     {
         id:1,
         title:"Manual Project 1 ",
@@ -32,7 +32,7 @@ export const manualProtfolio=[
 ];
 
 
-export const automationProtfolio=[
+export const swiftProtfolio=[
     {
         id:1,
         title:"Automation Project 1 ",
@@ -66,7 +66,7 @@ export const automationProtfolio=[
 ];
 
 
-export const scrumProtfolio=[
+export const lvfProtfolio=[
     {
         id:1,
         title:"Scrum Project 1 ",
