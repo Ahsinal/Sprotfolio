@@ -1,0 +1,28 @@
+.services {
+    background-color: rgb(249, 248, 247);
+
+    .work-card {
+        background-color: white;
+        box-shadow: 4px 4px 4px rgba(101, 100, 100, 0.1);
+        border:1px solid rgb(250, 250, 250);
+        border-radius: 10px;
+        .icon-img{
+            width: 3rem;
+            height: 3rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        h6{
+            color: rgb(31,37,128);
+        }
+        p{
+            font-size: 16px;
+            color: rgb(48, 47, 47);
+            font-weight:300;
+        }
+    }
+}

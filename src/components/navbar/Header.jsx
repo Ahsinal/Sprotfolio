@@ -1,5 +1,10 @@
 import "./navbar.scss";
-import { Person, Mail, LocationCityRounded } from "@mui/icons-material";
+import {
+  Person,
+  Mail,
+  LocationCityRounded,
+  CloudDownload,
+} from "@mui/icons-material";
 import { Link } from "react-router-dom";
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -23,7 +28,13 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 
               <div className="itemContainer">
                 <LocationCityRounded className="icon" />
-                <span>30 Nuffled Drive,Toronto</span>
+                <span>Toronto,Ontario,Canada</span>
+              </div>
+
+              <div className="itemContainer">
+                <a href="assets/cv.pdf" download="cv.pdf" >
+                  <CloudDownload className="icon" /><span>Download CV</span>
+                </a>
               </div>
             </div>
           </div>

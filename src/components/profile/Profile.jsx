@@ -10,7 +10,7 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 import { useEffect, useRef } from "react";
-import {Container, Col, Row, Button } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 const Intro = () => {
   const textRef = useRef(null);
 
@@ -33,8 +33,8 @@ const Intro = () => {
   return (
     <>
       <section>
-        <Container fluid className="intro" id="profile" >
-          <Row  className="d-flex align-items-center">
+        <Container fluid className="intro" id="profile">
+          <Row className="d-flex align-items-center">
             <Col lg={6} sm={12}>
               <div className="imgContainer">
                 <img src="assets/sp2.png" alt="" />
@@ -44,8 +44,8 @@ const Intro = () => {
               <h2>Hi There, I'm</h2>
               <h1>Sagar Parajuli</h1>
               <h3>
-                QA
-                <span>
+                Software QA Engineer
+                {/* <span>
                   <TypewriterComponent
                     onInit={(typewriter) => {
                       typewriter
@@ -55,7 +55,7 @@ const Intro = () => {
                         .start();
                     }}
                   />
-                </span>
+                </span> */}
               </h3>
               <p>
                 "Enhancing software quality with meticulous testing and
@@ -68,13 +68,16 @@ const Intro = () => {
                 <LinkedIn className="icon" />
                 <GitHub className="icon" />
                 <WhatsApp className="icon" />
-                <Reddit className="icon" />
               </div>
               <div className="mt-4">
                 <a href="assets/cv.pdf" download="cv.pdf">
-                  <Button variant="outline-info" className="me-4">Download CV</Button>
+                  <Button variant="outline-info" className="me-4">
+                    Download CV
+                  </Button>
                 </a>
-                <Button style={{backgroundColor:"rgba(31, 37, 128, 0.85)"}}>Guidance</Button>
+                <Button style={{ backgroundColor: "rgba(31, 37, 128, 0.85)" }}>
+                  Lets talk
+                </Button>
               </div>
             </Col>
           </Row>

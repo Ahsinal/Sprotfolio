@@ -1,74 +1,38 @@
-.about{
-    background-color: rgb(249, 248, 248);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0;
-    height: 100%;
-    // box-sizing: border-box;
+.about {
+    // background-color: rgb(249, 248, 248);
 
-    h3{
-        color: rgb(31,37,128);
-    }  
-    p{
-        width: 90%;
+    h3 {
+        color: rgb(31, 37, 128);
+    }
+
+    p {
         text-align: justify;
         color: rgb(62, 60, 60);
         font-size: 16px;
         padding: 8px 0;
     }
-.about-wrapper{
-    width: 90%;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-between;
 
-    .left{
-        width: 50%;
-        height: auto;
-        // background-color: rgb(146, 146, 164);
-        padding: 20px;
+    .img-wrapper {
+        width: 350px;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-        .counter-section{
+        .image {
+            background-color: white;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            justify-content:space-between;
-            margin-bottom: 30px;
+            justify-content: center;
 
-           
-        }
-
-        .img-wrapper{
-            width: 350px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: blue;
-
-            .image{
-                background-color: white;
-                width: 90px;
-                height: 90px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .comp-img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
+            .comp-img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
-
     }
 
-    .right{
-        width: 50%;
-        background-color: pink;
-    }
-}
 }

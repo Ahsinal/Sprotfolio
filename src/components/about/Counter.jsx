@@ -1,7 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import './counter.scss';
-import CountUp from 'react-countup';
-import { BugReport, SentimentSatisfied, Task, Work } from '@mui/icons-material/';
+import React, { useState } from "react";
+import "./counter.scss";
+import CountUp from "react-countup";
+import {
+  BugReport,
+  SentimentSatisfied,
+  Task,
+  Work,
+} from "@mui/icons-material/";
+import ScrollTrigger from "react-scroll-trigger";
 
 const Counter = () => {
   const counterData = [
@@ -9,71 +15,59 @@ const Counter = () => {
       id: "1",
       icon: <Work />,
       count: "10",
-      title: "Projects"
+      title: "Projects",
     },
     {
       id: "2",
       icon: <BugReport />,
       count: "100",
-      title: "Bug Reports"
+      title: "Bug Reports",
     },
     {
       id: "3",
       icon: <Task />,
       count: "50",
-      title: "Testing"
+      title: "Testing",
     },
     {
       id: "4",
       icon: <SentimentSatisfied />,
       count: "15",
-      title: "Happy Clients"
-    }
+      title: "Happy Clients",
+    },
   ];
 
-  const [counterStates, setCounterStates] = useState(Array(counterData.length).fill(false));
+  const [inView, setInView] = useState(false);
 
-  const handleScroll = (index, visible) => {
-    if (visible && !counterStates[index]) {
-      const updatedCounterStates = [...counterStates];
-      updatedCounterStates[index] = true;
-      setCounterStates(updatedCounterStates);
-    }
+  const handleEnter = () => {
+    console.log("Entered");
+    setInView(true);
   };
 
-  useEffect(() => {
-    const handleScrollEvent = () => {
-      counterData.forEach((_, index) => {
-        const element = document.getElementById(`counter-card-${index}`);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-          handleScroll(index, isVisible);
-        }
-      });
-    };
+  const handleExit = () => {
+    console.log("Exited");
+    setInView(false);
+  };
 
-    window.addEventListener('scroll', handleScrollEvent);
-    return () => {
-      window.removeEventListener('scroll', handleScrollEvent);
-    };
-  }, [counterData, counterStates]);
+  console.log("InView:", inView);
 
   return (
     <>
       {counterData.map((d, index) => (
-        <div className={`counter-card ${counterStates[index] ? 'active' : ''}`} key={d.id} id={`counter-card-${index}`}>
-          <h1>{d.icon}</h1>
-          <h4>
-            {counterStates[index] ? (
-              <CountUp start={0} end={parseInt(d.count, 10)} duration={2} />
-            ) : (
-              <span>{d.count}</span>
-            )}
-            <span> +</span>
-          </h4>
-          <h5>{d.title}</h5>
-        </div>
+        <ScrollTrigger key={d.id} onEnter={handleEnter} onExit={handleExit}>
+          <div className="counter-card" key={d.id}>
+            <h1>{d.icon}</h1>
+            <h4>
+              {inView && (
+                <span>
+                  <CountUp start={0} end={parseInt(d.count)} />
+                </span>
+              )}
+              <span> +</span>
+            </h4>
+            <h5>{d.title}</h5>
+          </div>
+        </ScrollTrigger>
       ))}
     </>
   );

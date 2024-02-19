@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 import About from "./components/about/About";
-import { Button } from "react-bootstrap";
+import Services from "./components/services/Services";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -18,6 +18,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Profile />
+        <Services/>
         <About />
         <Protfolio />
         <Projects />
