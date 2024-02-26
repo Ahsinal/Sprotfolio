@@ -1,4 +1,23 @@
-$mainNavColor:white;
-$navTextMain:rgb(31, 37, 128);
-$transColor:rgb(31, 37, 128);
-$transText:white;
+$mainNavColor: white;
+$navTextMain: rgb(31, 37, 128);
+$transColor: rgb(31, 37, 128);
+$transText: white;
+$primary: rgb(31, 37, 128);
+;
+
+.social-links {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+    .icon {
+        font-size: 1.5rem;
+        color: rgba(31, 37, 128, 0.8);
+        margin-right: 0.75rem;
+
+        &:hover {
+            color: rgba(31, 37, 128, 0.9);
+        }
+    }
+}

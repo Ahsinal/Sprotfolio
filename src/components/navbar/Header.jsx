@@ -31,11 +31,11 @@ const Header = ({ menuOpen, setMenuOpen }) => {
                 <span>Toronto,Ontario,Canada</span>
               </div>
 
-              <div className="itemContainer">
+              {/* <div className="itemContainer">
                 <a href="assets/cv.pdf" download="cv.pdf" >
                   <CloudDownload className="icon" /><span>Download CV</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 

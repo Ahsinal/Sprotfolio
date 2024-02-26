@@ -1,6 +1,4 @@
 import "./profile.scss";
-// import { init } from 'ityped'
-import TypewriterComponent from "typewriter-effect";
 import {
   Facebook,
   GitHub,
@@ -14,25 +12,10 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 const Intro = () => {
   const textRef = useRef(null);
 
-  // useEffect(()=>{
-  //   const textElement=textRef.current;
-  //   let typed;
-  //   if(textElement){
-  //     typed=init(textElement, {
-  //       backDelay:1500,
-  //       showCursor:true,
-  //       strings: ['Associate', 'Engineer','Tester'],
-  //     });
-  //   }
-  //     return ()=>{
-  //       if(typed ){
-  //         typed.destroy();
-  //       }
-  //     };
-  // },[]);
+
   return (
     <>
-      <section>
+      <section className="mt-5 pt-4">
         <Container fluid className="intro" id="profile">
           <Row className="d-flex align-items-center">
             <Col lg={6} sm={12}>
@@ -44,18 +27,7 @@ const Intro = () => {
               <h2>Hi There, I'm</h2>
               <h1>Sagar Parajuli</h1>
               <h3>
-                Software QA Engineer
-                {/* <span>
-                  <TypewriterComponent
-                    onInit={(typewriter) => {
-                      typewriter
-                        .typeString("Engineer")
-                        .deleteAll()
-                        .pauseFor(50)
-                        .start();
-                    }}
-                  />
-                </span> */}
+               a <span className="ms-1 text-info">Software QA Engineer</span>
               </h3>
               <p>
                 "Enhancing software quality with meticulous testing and
@@ -63,20 +35,20 @@ const Intro = () => {
                 functionality for superior user experiences. Dedicated to
                 excellence in every code line."
               </p>
-              <div className="social-links">
+              {/* <div className="social-links">
                 <Facebook className="icon" />
                 <LinkedIn className="icon" />
                 <GitHub className="icon" />
                 <WhatsApp className="icon" />
-              </div>
-              <div className="mt-4">
+              </div> */}
+              <div className="">
                 <a href="assets/cv.pdf" download="cv.pdf">
                   <Button variant="outline-info" className="me-4">
                     Download CV
                   </Button>
                 </a>
                 <Button style={{ backgroundColor: "rgba(31, 37, 128, 0.85)" }}>
-                  Lets talk
+                  Hire Me
                 </Button>
               </div>
             </Col>

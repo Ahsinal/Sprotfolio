@@ -10,6 +10,8 @@ import { useState } from "react";
 import Menu from "./components/menu/Menu";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
+import Tools from "./components/tools/Tools";
+import Swipers from "./components/tools/Swipers"
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -18,11 +20,13 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Profile />
-        <Services/>
         <About />
+        <Services />
+        <Tools />
+        {/* <Swipers/> */}
         <Protfolio />
         <Projects />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </div>
     </div>

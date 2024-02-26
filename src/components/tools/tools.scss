@@ -1,0 +1,30 @@
+.tools-section {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: rgba(#9a9898, 0.85);
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 1.65rem;
+        color: white;
+    }
+
+    .tools-slider {
+        .slider-img {
+            width: 8rem;
+            height: 8rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}
