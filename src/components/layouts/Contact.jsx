@@ -1,5 +1,4 @@
-import { Container } from "@mui/material";
-import "./contact.scss";
+import { Container } from "react-bootstrap";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
@@ -7,19 +6,19 @@ import Form from "react-bootstrap/Form";
 import { Col, Row, Button, FormControl, FormLabel } from "react-bootstrap";
 const Contact = () => {
   return (
-    <section className="mb-5 contact" id="contact">
+    <section className="py-4 contact" id="contact">
       <Container>
-        <h6 style={{ color: "rgb(31, 37, 128)" }}> Contact</h6>
-        <Row className="g-5 align-items-center">
+        <h6 className="text-prime"> Contact</h6>
+        <Row className="gx-5 align-items-center">
           <Col lg={5} sm={12} className="d-flex flex-column ">
-            <div className="contact-img mb-4">
+            <div className="contact-img mb-3">
               <img
                 src="https://img.freepik.com/free-photo/connect-incoming-call-communication-concept_53876-125112.jpg?t=st=1709013385~exp=1709016985~hmac=2d5a37561349400ab6f0f9cdd3acac7b02668b4cfb56b62e355cd8d4e4884801&w=1480"
                 alt="contact-img"
                 className="img-fluid rounded-2"
               />
             </div>
-            <div className=" contact-box d-flex align-items-center gap-4  p-3 mb-3">
+            <div className=" contact-box d-flex align-items-center gap-4  p-3 mb-2">
               <div className="circle">
                 <MdEmail className="h3" />
               </div>
@@ -28,7 +27,7 @@ const Contact = () => {
                 <p>parajuli.sagar1998@gmail.com</p>
               </div>
             </div>
-            <div className=" contact-box d-flex align-items-center gap-4  p-3 mb-3">
+            <div className=" contact-box d-flex align-items-center gap-4  p-3 mb-2">
               <div className="circle">
                 <FaPhone className="h4" />
               </div>
@@ -37,7 +36,7 @@ const Contact = () => {
                 <p>+1 437-878-5778</p>
               </div>
             </div>
-            <div className=" contact-box d-flex align-items-center gap-4  p-3 mb-3">
+            <div className=" contact-box d-flex align-items-center gap-4  p-3">
               <div className="circle">
                 <FaLocationDot className="h4" />
               </div>

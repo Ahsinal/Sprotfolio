@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 SwiperCore.use([Navigation]);
-const PortfolioSlider = () => {
+const Projects = () => {
   const data = [
     {
       img: "https://img.freepik.com/free-photo/navigation-gps-map-location-travel-direction-website-icon-sign-symbol-illustration-3d-rendering_56104-1229.jpg?t=st=1709010334~exp=1709013934~hmac=13954014cdc36512101a89c261ad84d941e90053fdc016f37780834870ddef7a&w=1480",
@@ -68,18 +68,9 @@ const PortfolioSlider = () => {
     }
   };
   return (
-    <section className="projects-section py-5" id="projects">
+    <section className="projects py-5" id="projects">
       <Container>
-        <div className="d-flex justify-content-between align-items-center ">
-          <h6 style={{ color: "rgb(31, 37, 128)" }}> Portfolio</h6>
-          <div
-            className="d-flex gap-3 h4"
-            style={{ color: "rgb(31, 37, 128)" }}
-          >
-            <FaArrowAltCircleLeft onClick={goPrev} />
-            <FaArrowAltCircleRight onClick={goNext} />
-          </div>
-        </div>
+        <h6 className="text-prime mb-3"> Portfolio</h6>
         <Swiper
           spaceBetween={20}
           loop={true}
@@ -96,7 +87,7 @@ const PortfolioSlider = () => {
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 10,
+              spaceBetween: 20,
             },
           }}
           className="mySwiper"
@@ -104,7 +95,7 @@ const PortfolioSlider = () => {
           {data.map((d, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className="project-card  p-3 position-relative">
+                <div className="project-card  p-3 position-relative rounded-3">
                   <div className="project-card-img ">
                     <img src={d.img} alt="project-img" className="img-fluid" />
                   </div>
@@ -118,9 +109,13 @@ const PortfolioSlider = () => {
             );
           })}
         </Swiper>
+        <div className="d-flex justify-content-center gap-5 h2 mt-4">
+          <FaArrowAltCircleLeft onClick={goPrev} />
+          <FaArrowAltCircleRight onClick={goNext} />
+        </div>
       </Container>
     </section>
   );
 };
 
-export default PortfolioSlider;
+export default Projects;

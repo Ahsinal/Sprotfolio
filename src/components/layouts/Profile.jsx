@@ -1,10 +1,6 @@
-import "./profile.scss";
-
-import { useEffect, useRef } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const Intro = () => {
-  const textRef = useRef(null);
-
   return (
     <>
       <section className="mt-5 pt-4 intro" id="profile">
@@ -15,9 +11,9 @@ const Intro = () => {
                 <img src="assets/sp2.png" alt="" />
               </div>
             </Col>
-            <Col lg={6} sm={12} className="wrapper">
+            <Col lg={6} sm={12} className="">
               <h2>Hi There, I'm</h2>
-              <h1>Sagar Parajuli</h1>
+              <h1 className="display-3 fw-normal">Sagar Parajuli</h1>
               <h3>
                 a <span className="ms-1 text-info">Software QA Engineer</span>
               </h3>
@@ -27,21 +23,21 @@ const Intro = () => {
                 functionality for superior user experiences. Dedicated to
                 excellence in every code line."
               </p>
-              {/* <div className="social-links">
-                <Facebook className="icon" />
-                <LinkedIn className="icon" />
-                <GitHub className="icon" />
-                <WhatsApp className="icon" />
-              </div> */}
               <div className="">
-                <a href="assets/cv.pdf" download="cv.pdf">
-                  <Button variant="outline-info" className="me-4">
-                    Download CV
-                  </Button>
-                </a>
-                <Button style={{ backgroundColor: "rgba(31, 37, 128, 0.85)" }}>
+                <Link
+                  href="assets/cv.pdf"
+                  download="cv.pdf"
+                  className="me-4 btn btn-outline-info btn-md"
+                >
+                  Download CV
+                </Link>
+                <Link
+                  href="contact"
+                  className="me-4 btn  btn-md text-white"
+                  style={{"backgroundColor":"#1F2580"}}
+                >
                   Hire Me
-                </Button>
+                </Link>
               </div>
             </Col>
           </Row>
