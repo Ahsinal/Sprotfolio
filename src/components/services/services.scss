@@ -1,28 +1,57 @@
 .services {
-    background-color: rgb(249, 248, 247);
+    // background-color: #ECF1F2;
 
     .work-card {
         background-color: white;
-        box-shadow: 4px 4px 4px rgba(101, 100, 100, 0.1);
-        border:1px solid rgb(250, 250, 250);
+        box-shadow: 4px 4px 4px rgba(107, 106, 106, 0.1);
+        border: 1px solid rgb(241, 239, 239);
         border-radius: 10px;
-        .icon-img{
+
+        .icon-img {
             width: 3rem;
             height: 3rem;
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
             }
         }
-        h6{
-            color: rgb(31,37,128);
+
+        h6 {
+            color: rgb(31, 37, 128);
         }
-        p{
+
+        p {
             font-size: 16px;
             color: rgb(48, 47, 47);
-            font-weight:300;
+            font-weight: 300;
+        }
+    }
+
+    .tool-box {
+        box-sizing: border-box;
+        background-color: #FBFAFD;
+        width: 5rem;
+        height: 5rem;
+        box-shadow: 4px 4px 4px rgba(107, 106, 106, 0.1);
+        border: 1px solid rgb(241, 239, 239);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .tool-image {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
         }
     }
 }

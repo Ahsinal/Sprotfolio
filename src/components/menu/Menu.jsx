@@ -8,6 +8,14 @@ import {
   Verified,
   Work,
 } from "@mui/icons-material";
+import {
+  Facebook,
+  GitHub,
+  LinkedIn,
+  Loop,
+  Reddit,
+  WhatsApp,
+} from "@mui/icons-material";
 import "./menu.scss";
 const Menu = ({ menuOpen, setMenuOpen }) => {
   const menuItem = [
@@ -25,21 +33,21 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
     },
     {
       id: 3,
-      element: "Work Experience",
-      href: "portfolio",
+      element: "What I DO",
+      href: "services",
       icon: <Verified />,
     },
     {
       id: 4,
-      element: "Projects",
-      href: "projects",
-      icon: <Work />,
+      element: "Skills",
+      href: "services",
+      icon: <Verified />,
     },
     {
       id: 5,
-      element: "Testimonials",
-      href: "testimonials",
-      icon: <RateReview />,
+      element: "Projects",
+      href: "projects",
+      icon: <Work />,
     },
     {
       id: 6,
@@ -48,13 +56,13 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       icon: <CardGiftcard />,
     },
     {
-      id: 8,
+      id: 7,
       element: "QA Guidelines ",
       href: "guidance",
       icon: <TipsAndUpdates />,
     },
     {
-      id: 7,
+      id: 8,
       element: "Contact",
       href: "contact",
       icon: <ConnectWithoutContact />,
@@ -71,6 +79,20 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         ))}
       </ul>
       <div className="menu-footer">
+        {/* <div className="social-links mb-2 p">
+          <a href="">
+            <Facebook className="icon text-white" />
+          </a>
+          <a href="">
+            <LinkedIn className="icon text-white" />
+          </a>
+          <a href="">
+            <GitHub className="icon text-white" />
+          </a>
+          <a href="">
+            <WhatsApp className="icon text-white" />
+          </a>
+        </div> */}
         <p> Copyright © 2024 Sagar Parajuli | All rights are reserved.</p>
       </div>
     </div>

@@ -28,7 +28,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="services py-5" id="services">
+    <section className="services py-2" id="services">
       <Container className="py-5">
         <Row className=" g-3 ">
           <h6 style={{ color: "rgb(31, 37, 128)" }}> What I Do</h6>
@@ -45,6 +45,113 @@ const Services = () => {
               </Col>
             );
           })}
+        </Row>
+        <Row className="mt-5">
+          {/* <h3 className="text-center">Tools I use</h3> */}
+          <h6 className="text-center">Primary Skills on</h6>
+          <div className="d-flex justify-content-center gap-4 mt-2">
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img
+                  src="https://img.freepik.com/free-psd/gradient-abstract-logo_23-2150689665.jpg?t=st=1708945809~exp=1708949409~hmac=b7042c249b152f57f29a56e3006f9e5c6b835ce73dc8bc64bc2f313984913e00&w=1060"
+                  alt="tools"
+                />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+          </div>
+          <div className="d-flex justify-content-center gap-4 mt-3">
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+          </div>
+          <h6 className="text-center mt-3">Primary Skills I Have</h6>
+          <div className="d-flex justify-content-center gap-4 mt-2">
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img
+                  src="https://img.freepik.com/free-psd/gradient-abstract-logo_23-2150689665.jpg?t=st=1708945809~exp=1708949409~hmac=b7042c249b152f57f29a56e3006f9e5c6b835ce73dc8bc64bc2f313984913e00&w=1060"
+                  alt="tools"
+                />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+            <div className="tool-box">
+              <div className="tool-image p-3">
+                <img src="" alt="tools" />
+              </div>
+            </div>
+          </div>
         </Row>
       </Container>
     </section>

@@ -16,38 +16,52 @@ import { Badge } from "@mui/material";
 const About = () => {
   return (
     <>
-      <section className="about py-5" id="about">
+      <section className="about mt-5" id="about">
         <Container>
           <h6 style={{ color: "rgb(31, 37, 128)" }}> About Me</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum
-            exercitationem beatae nostrum eum recusandae quidem laudantium
-            excepturi, possimus blanditiis eveniet quibusdam doloremque autem
-            maiores quasi qui eos maxime necessitatibus. In, quis! Illum
-            accusantium eius sunt cumque eaque assumenda. Quisquam Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Unde rerum
-            exercitationem beatae nostrum eum recusandae quidem laudantium
-            excepturi, possimus blanditiis eveniet quibusdam doloremque autem
-            maiores quasi qui eos maxime necessitatibus. In,
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum
-            exercitationem beatae nostrum eum recusandae quidem laudantium
-            excepturi, possimus blanditiis eveniet quibusdam doloremque autem
-            maiores quasi qui eos maxime necessitatibus. In, quis! Illum
-            accusantium eius sunt cumque eaque assumenda. Quisquam Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Unde rerum
-            exercitationem beatae nostrum eum recusandae quidem laudantium
-            excepturi, possimus blanditiis eveniet quibusdam doloremque autem
-            maiores quasi qui eos maxime necessitatibus. In,
-          </p>
-          <Row className=" g-4">
+          <Row>
+            <Col lg={12} sm={12}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                rerum exercitationem beatae nostrum eum recusandae quidem
+                laudantium excepturi, possimus blanditiis eveniet quibusdam
+                doloremque autem maiores quasi qui eos maxime necessitatibus.
+                In, quis! Illum accusantium eius sunt cumque eaque assumenda.
+                Quisquam Lorem ipsum dolor sit amet consectetur adipisicing
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                rerum exercitationem beatae nostrum eum recusandae quidem
+                laudantium excepturi, possimus blanditiis eveniet quibusdam
+                doloremque autem maiores quasi qui eos maxime necessitatibus.
+                In, quis! Illum accusantium eius sunt cumque eaque assumenda.
+                Quisquam Lorem ipsum dolor sit amet consectetur adipisicing
+              </p>
+            </Col>
+          </Row>
+          <Row className=" g-5 mt-1">
             <Col lg={6} sm={12}>
               <div className="d-flex align-items-center  gap-2 mb-3 ">
                 <School className="h3" />
-                <h4>Education</h4>
+                <h5>Education</h5>
               </div>
-              <div className="ps-3 ">
+              <div className="d-flex box py-3 gap-5 align-items-center mb-4">
+                <div className="circle">03</div>
+                <div className="content">
+                  <p>2018 - 2022</p>
+                  <h5>LVF</h5>
+                  <p>Collage Name</p>
+                </div>
+              </div>
+              <div className="d-flex box py-3 gap-5 align-items-center mb-4">
+                <div className="circle">03</div>
+                <div className="content">
+                  <p>2018 - 2022</p>
+                  <h5>LVF</h5>
+                  <p>Collage Name</p>
+                </div>
+              </div>
+              {/* <div className="ps-3 ">
                 <div className="box-edu  p-3 mb-3">
                   <p>Jan 2024 - Present</p>
                   <h6 className="mt-2">Project Management in IT</h6>
@@ -58,28 +72,34 @@ const About = () => {
                   <h6 className="mt-2">BSC. CSIT</h6>
                   <h6 className="fw-normal">Lambton Collage,Toronto</h6>
                 </div>
-              </div>
+              </div> */}
             </Col>
             <Col lg={6} sm={12}>
               <div className="d-flex align-items-center  gap-2 mb-3 ">
                 <Work className="h5" />
-                <h4>Work Experience</h4>
+                <h5>Work Experience</h5>
               </div>
               <div className="ps-3 ">
-                <div className="box-edu  p-3 mb-3">
-                  <p>Jan 2024 - Present</p>
-                  <h6 className="mt-2">Zebec</h6>
-                  <h6 className="fw-normal">Sr. QA</h6>
+                <div className="d-flex box py-3 gap-5 align-items-center mb-4">
+                  <div className="circle">03</div>
+                  <div className="content">
+                    <p>2018 - 2022</p>
+                    <h5>LVF</h5>
+                  </div>
                 </div>
-                <div className="box-edu  p-3 mb-3">
-                  <p>Jan 2024 - Present</p>
-                  <h6 className="mt-2">BSC. CSIT</h6>
-                  <h6 className="fw-normal">Software QA Engineer</h6>
+                <div className="d-flex box py-3 gap-5 align-items-center mb-4">
+                  <div className="circle">03</div>
+                  <div className="content">
+                    <p>2018 - 2022</p>
+                    <h5>LVF</h5>
+                  </div>
                 </div>
-                <div className="box-edu  p-3 ">
-                  <p>Jan 2024 - Present</p>
-                  <h6 className="mt-2">LVF Technology</h6>
-                  <h6 className="fw-normal">Software QA Engineer</h6>
+                <div className="d-flex box py-3 gap-5 align-items-center mb-4">
+                  <div className="circle">03</div>
+                  <div className="content">
+                    <p>2018 - 2022</p>
+                    <h5>LVF</h5>
+                  </div>
                 </div>
               </div>
             </Col>

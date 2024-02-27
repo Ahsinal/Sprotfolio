@@ -1,22 +1,14 @@
 import "./profile.scss";
-import {
-  Facebook,
-  GitHub,
-  LinkedIn,
-  Loop,
-  Reddit,
-  WhatsApp,
-} from "@mui/icons-material";
+
 import { useEffect, useRef } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 const Intro = () => {
   const textRef = useRef(null);
 
-
   return (
     <>
-      <section className="mt-5 pt-4">
-        <Container fluid className="intro" id="profile">
+      <section className="mt-5 pt-4 intro" id="profile">
+        <Container fluid>
           <Row className="d-flex align-items-center">
             <Col lg={6} sm={12}>
               <div className="imgContainer">
@@ -27,7 +19,7 @@ const Intro = () => {
               <h2>Hi There, I'm</h2>
               <h1>Sagar Parajuli</h1>
               <h3>
-               a <span className="ms-1 text-info">Software QA Engineer</span>
+                a <span className="ms-1 text-info">Software QA Engineer</span>
               </h3>
               <p>
                 "Enhancing software quality with meticulous testing and

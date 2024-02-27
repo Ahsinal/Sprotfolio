@@ -1,85 +1,124 @@
 @import '../../global.scss';
 
-.protfolio {
-    h1 {
-        padding-top: 30px;
-        font-size: 2rem;
-    }
+// .protfolio {
+//     h1 {
+//         padding-top: 30px;
+//         font-size: 2rem;
+//     }
 
-    ul {
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
+//     ul {
+//         margin: 10px;
+//         padding: 0;
+//         list-style: none;
+//         display: flex;
 
 
-    }
+//     }
 
-    .portfolio-card {
-        box-shadow: 4px 4px 4px rgba(101, 100, 100, 0.1);
-        border-radius: 20px;
-        border: 1px solid rgb(240, 239, 230);
-        position: relative;
-        transition: all 0.5s ease;
-        cursor: pointer;
-        height: auto;
+//     .portfolio-card {
+//         box-shadow: 4px 4px 4px rgba(101, 100, 100, 0.1);
+//         border-radius: 20px;
+//         border: 1px solid rgb(240, 239, 230);
+//         position: relative;
+//         transition: all 0.5s ease;
+//         cursor: pointer;
+//         height: auto;
 
-        .portfolio-img {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
+//         .portfolio-img {
+//             width: 100%;
+//             height: 200px;
+//             border-radius: 10px;
 
+//             img {
+//                 height: 100%;
+//                 width: 100%;
+//                 object-fit: cover;
+//                 object-position: center;
+//             }
+//         }
+
+//     }
+
+//     // .container {
+//     //     width: 70%;
+//     //     display: flex;
+//     //     align-items: center;
+//     //     justify-content: center;
+//     //     flex-wrap: wrap;
+
+//     //     .item {
+//     //         width: 220px;
+//     //         height: 150px;
+//     //         border-radius: 20px;
+//     //         border: 1px solid rgb(240, 239, 230);
+//     //         margin: 10px 20px;
+//     //         display: flex;
+//     //         justify-content: center;
+//     //         align-items: center;
+//     //         color: white;
+//     //         position: relative;
+//     //         transition: all 0.5s ease;
+//     //         cursor: pointer;
+
+//     //         h3 {
+//     //             position: absolute;
+//     //             font-size: 20px;
+//     //         }
+
+//     //         img {
+//     //             width: 220px;
+//     //             height: 100%;
+//     //             object-fit: cover;
+//     //             z-index: 1;
+//     //         }
+
+//     //         &:hover {
+//     //             background-color: $navTextMain ;
+
+//     //             img {
+//     //                 opacity: 0.2;
+//     //                 z-index: 0;
+//     //             }
+//     //         }
+//     //     }
+//     // }
+// }
+
+.projects-section {
+    background-color: rgb(252, 251, 251);
+
+    .project-card {
+        &:hover {
             img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: center;
+                transform: scale(1.05);
             }
         }
 
+        .project-card-img {
+            width: 100%;
+            height: 9rem;
+            border-radius: 10px;
+            background-color: white;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: all ease-in-out 0.5s;
+            }
+        }
+
+        .project-detail {
+            h6 {
+                color: #1F2580;
+            }
+
+            p {
+                font-weight: 300;
+                color: rgb(43, 42, 42);
+            }
+        }
     }
-
-    // .container {
-    //     width: 70%;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     flex-wrap: wrap;
-
-    //     .item {
-    //         width: 220px;
-    //         height: 150px;
-    //         border-radius: 20px;
-    //         border: 1px solid rgb(240, 239, 230);
-    //         margin: 10px 20px;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         color: white;
-    //         position: relative;
-    //         transition: all 0.5s ease;
-    //         cursor: pointer;
-
-    //         h3 {
-    //             position: absolute;
-    //             font-size: 20px;
-    //         }
-
-    //         img {
-    //             width: 220px;
-    //             height: 100%;
-    //             object-fit: cover;
-    //             z-index: 1;
-    //         }
-
-    //         &:hover {
-    //             background-color: $navTextMain ;
-
-    //             img {
-    //                 opacity: 0.2;
-    //                 z-index: 0;
-    //             }
-    //         }
-    //     }
-    // }
 }
