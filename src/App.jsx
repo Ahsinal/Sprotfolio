@@ -18,7 +18,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/certificates" element={<Certificates />} />
+        <Route path="/certification" element={<Certificates />} />
         <Route path="/guidance" element={<Guidance />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
