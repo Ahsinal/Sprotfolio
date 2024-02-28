@@ -1,4 +1,5 @@
 import { Container, Col, Row, Button } from "react-bootstrap";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 const Intro = () => {
   return (
     <>
@@ -20,11 +21,25 @@ const Intro = () => {
                 </span>
               </h3>
               <p>
-                "Enhancing software quality with meticulous testing and
-                innovative solutions. Committed to ensuring reliability and
+                "Ensuring top-notch software with meticulous testing and
+                creative solutions. Committed to ensuring reliability and
                 functionality for superior user experiences. Dedicated to
-                excellence in every code line."
+                excellence in every line of code. "
               </p>
+              <div className="d-flex gap-2 h4 mb-3">
+                <a href="/" as="Link" target="blank">
+                  <FaFacebook className="text-prime " />
+                </a>
+                <a href="/" as="Link" target="blank">
+                  <FaLinkedin className="text-prime " />
+                </a>
+                <a href="/" as="Link" target="blank">
+                  <FaGithub className="text-prime " />
+                </a>
+                <a href="/" as="Link" target="blank">
+                  <FaWhatsapp className="text-prime " />
+                </a>
+              </div>
               <div className="">
                 <a
                   as="Link"

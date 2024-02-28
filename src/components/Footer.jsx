@@ -7,7 +7,14 @@ const Footer = () => {
       <Container className="d-flex align-items-center justify-content-between  text-white ">
         <p className="p-0 m-0 text-white">
           Copyright © 2024 Sagar Parajuli | All rights are reserved | Designed
-          by Lanisha Koirala
+          by{" "}
+          <a
+            href="https://www.linkedin.com/in/lanisha-koirala-a3a13725a/"
+            target="blank"
+            className="text-white"
+          >
+            Lanisha Koirala
+          </a>.
         </p>
 
         <div className="d-flex gap-2 h5">

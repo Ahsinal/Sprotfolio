@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaAward, FaHome } from "react-icons/fa";
+import { FaAward, FaHome, FaPhone, FaPhoneAlt } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import {
   MdCardGiftcard,
@@ -92,7 +92,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             </a>
             <div className="d-none d-lg-flex">
               <div className="itemContainer">
-                <IoPersonCircle className="icon" />
+                <FaPhoneAlt className="icon" />
                 <span>+1 437-878-5778</span>
               </div>
 
@@ -103,15 +103,15 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 
               <div className="itemContainer">
                 <FaLocationDot className="icon" />
-                <span>Toronto, Ontario, Canada</span>
+                <span>Toronto, Canada</span>
               </div>
 
-              <div className="itemContainer">
+              {/* <div className="itemContainer">
                 <Link to="assets/cv.pdf" download="cv.pdf">
                   <FaCloudDownloadAlt className="icon" />
                   <span>Download CV</span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 

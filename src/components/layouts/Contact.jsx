@@ -77,22 +77,24 @@ const Contact = () => {
             </div>
           </Col>
           <Col lg={7} sm={12} className="p-5">
-            <h5>Lets Work together.</h5>
+            <h5 className="text-prime ">Lets Work together.</h5>
             <Form onSubmit={handleFormSubmit}>
-              <div className="mb-2">
-                <FormLabel htmlFor="">Full Name</FormLabel>
+              <div className="mb-3">
+                <FormLabel htmlFor="" className="mb-0">
+                  Full Name
+                </FormLabel>
                 <FormControl type="text" required />
               </div>
-              <div className="mb-2">
-                <FormLabel htmlFor="">E-mail</FormLabel>
+              <div className="mb-3">
+                <FormLabel htmlFor="" className="mb-0">E-mail</FormLabel>
                 <FormControl type="email" required />
               </div>
-              <div className="mb-2">
-                <FormLabel htmlFor="">Phone No</FormLabel>
+              <div className="mb-3">
+                <FormLabel htmlFor="" className="mb-0" >Phone No</FormLabel>
                 <FormControl type="phone" required />
               </div>
-              <div className="mb-3">
-                <FormLabel htmlFor=""></FormLabel>
+              <div className="mb-4">
+                <FormLabel htmlFor="" className="mb-0">Message</FormLabel>
                 <FormControl as="textarea" rows="6" required />
               </div>
               <Button

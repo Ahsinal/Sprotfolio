@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 const Services = () => {
   const data = [
     {
@@ -26,6 +26,110 @@ const Services = () => {
       desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidemid perferendis debitis.",
     },
   ];
+  const primarySkills = [
+    {
+      id: "1",
+      img: "",
+      title: "",
+    },
+    {
+      id: "2",
+      img: "",
+      title: "",
+    },
+    {
+      id: "3",
+      img: "",
+      title: "",
+    },
+    {
+      id: "4",
+      img: "",
+      title: "",
+    },
+    {
+      id: "5",
+      img: "",
+      title: "",
+    },
+    {
+      id: "6",
+      img: "",
+      title: "",
+    },
+    {
+      id: "7",
+      img: "",
+      title: "",
+    },
+    {
+      id: "8",
+      img: "",
+      title: "",
+    },
+    {
+      id: "9",
+      img: "",
+      title: "",
+    },
+    {
+      id: "10",
+      img: "",
+      title: "",
+    },
+  ];
+  const secondarySkills = [
+    {
+      id: "1",
+      img: "",
+      title: "",
+    },
+    {
+      id: "2",
+      img: "",
+      title: "",
+    },
+    {
+      id: "3",
+      img: "",
+      title: "",
+    },
+    {
+      id: "4",
+      img: "",
+      title: "",
+    },
+    {
+      id: "5",
+      img: "",
+      title: "",
+    },
+    {
+      id: "6",
+      img: "",
+      title: "",
+    },
+    {
+      id: "7",
+      img: "",
+      title: "",
+    },
+    {
+      id: "8",
+      img: "",
+      title: "",
+    },
+    {
+      id: "9",
+      img: "",
+      title: "",
+    },
+    {
+      id: "10",
+      img: "",
+      title: "",
+    },
+  ];
   return (
     <section className="services py-5" id="services">
       <Container>
@@ -46,109 +150,40 @@ const Services = () => {
           })}
         </Row>
         <Row className="mt-5">
-          <h6 className="text-center text-prime">Primary Skills on</h6>
+          <h6 className="text-center text-prime">Primary Skills </h6>
           <div className="d-flex justify-content-center gap-4 mt-1">
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img
-                  src="https://img.freepik.com/free-psd/gradient-abstract-logo_23-2150689665.jpg?t=st=1708945809~exp=1708949409~hmac=b7042c249b152f57f29a56e3006f9e5c6b835ce73dc8bc64bc2f313984913e00&w=1060"
-                  alt="tools"
-                />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
+            {primarySkills.slice(0, 6).map((d, i) => {
+              return (
+                <div className="tool-box">
+                  <div className="tool-image p-2" key={i}>
+                    <img src={d.img} alt="tools" />
+                  </div>
+                </div>
+              );
+            })}
           </div>
           <div className="d-flex justify-content-center gap-4 mt-2 mb-4">
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
+            {primarySkills.slice(6, 11).map((d, i) => {
+              return (
+                <div className="tool-box" key={i}>
+                  <div className="tool-image p-2">
+                    <img src="" alt="tools" />
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          <h6 className="text-center text-prime">Secondary Skills I Have</h6>
+          <h6 className="text-center text-prime">Other Skills</h6>
           <div className="d-flex justify-content-center gap-4 mt-1">
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img
-                  src="https://img.freepik.com/free-psd/gradient-abstract-logo_23-2150689665.jpg?t=st=1708945809~exp=1708949409~hmac=b7042c249b152f57f29a56e3006f9e5c6b835ce73dc8bc64bc2f313984913e00&w=1060"
-                  alt="tools"
-                />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
-            <div className="tool-box">
-              <div className="tool-image p-2">
-                <img src="" alt="tools" />
-              </div>
-            </div>
+            {secondarySkills.map((d, i) => {
+              return (
+                <div className="tool-box" key={i}>
+                  <div className="tool-image p-2">
+                    <img src="/assets/tools/github.png" alt="tools" />
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </Row>
       </Container>

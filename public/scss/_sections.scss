@@ -153,6 +153,13 @@
             p {
                 font-weight: 300;
                 color: rgb(43, 42, 42);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                /* Limit to 5 lines, adjust min and max font size as needed */
+                -webkit-line-clamp: 6;
+                /* Additional styling */
+                text-overflow: ellipsis;
             }
         }
     }
@@ -174,5 +181,9 @@
 }
 
 .footer {
+    a {
+        text-decoration: none;
+    }
+
     background-color: #1F2580;
 }

@@ -77,7 +77,13 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       <div className="menu-footer">
         <p className="small">
           Copyright © 2024 Sagar Parajuli | All rights are reserved | Designed
-          by Lanisha Koirala.
+          by <a
+            href="https://www.linkedin.com/in/lanisha-koirala-a3a13725a/"
+            target="blank"
+            className="text-white"
+          >
+            Lanisha Koirala
+          </a>.
         </p>
       </div>
     </div>

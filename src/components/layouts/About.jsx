@@ -2,6 +2,40 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaSchool } from "react-icons/fa6";
 import { MdWork } from "react-icons/md";
 const About = () => {
+  const eduData = [
+    {
+      id: "1",
+      batch: "2024-Present",
+      course: "Project Management in Information Technology",
+      collage: "Lambton Collage in Toronto",
+    },
+    {
+      id: "2",
+      batch: "2018-2022",
+      course: "BSc.Computer Science and Information Technology",
+      collage: "Tribhuvan University",
+    },
+  ];
+  const expData = [
+    {
+      id: "1",
+      year: "Jul 2022 - Present",
+      company: "Zebec Protocol",
+      designation: "Software QA Engineer",
+    },
+    {
+      id: "2",
+      year: "Feb 2021 - Jun 2022",
+      company: "Swift Technology Pvt. Ltd.",
+      designation: "Software QA Engineer",
+    },
+    {
+      id: "3",
+      year: "Aug 2019 - Jan 2021",
+      company: "LVF Technology Pvt. Ltd.",
+      designation: "Associate Software QA Engineer",
+    },
+  ];
   return (
     <>
       <section className="about mt-3" id="about">
@@ -9,44 +43,65 @@ const About = () => {
           <h6 className="text-prime"> About Me</h6>
           <div className="mb-4">
             <p className="p-about">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              rerum exercitationem beatae nostrum eum recusandae quidem
-              laudantium excepturi, possimus blanditiis eveniet quibusdam
-              doloremque autem maiores quasi qui eos maxime necessitatibus. In,
-              quis! Illum accusantium eius sunt cumque eaque assumenda. Quisquam
-              Lorem ipsum dolor sit amet consectetur adipisicing
-            </p>
-            <p className="p-about">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              rerum exercitationem beatae nostrum eum recusandae quidem
-              laudantium excepturi, possimus blanditiis eveniet quibusdam
-              doloremque autem maiores quasi qui eos maxime necessitatibus. In,
-              quis! Illum accusantium eius sunt cumque eaque assumenda. Quisquam
-              Lorem ipsum dolor sit amet consectetur adipisicing
+              My name is Sagar Parajuli. I am a Computer Science Engineer who is
+              very passionate about Software Quality Testing. I started my
+              career back in 2021 A. D. from a Multi-National Company in Nepal
+              as an Intern in Software Quality Assurance. Currently, I am
+              working as Software Engineer QA at Swift Technology Pvt. Ltd. In
+              between, I got an opportunity to serve many companies. Having
+              worked at various companies, from a startup to Multi-National
+              Companies, one thing I have realized is that
+              <br />
+              <br />
+              “Testing is not just creating and validating test cases rather
+              it’s a continuous process to improve the quality of a software”. I
+              believe in helping people to be a better version of themselves.
             </p>
           </div>
-          <Row className=" g-5">
+          <Row className=" gx-5">
             <Col lg={6} sm={12}>
               <div className="d-flex align-items-center  gap-2 mb-2 text-prime">
-                <FaSchool className="h3" />
-                <h5>Education</h5>
+                <MdWork className="h4" />
+                <h6>Work Experience</h6>
               </div>
-              <div className="d-flex box py-3 gap-5 align-items-center">
-                <div className="circle">03</div>
-                <div className="content">
-                  <p>2018 - 2022</p>
-                  <h5 className="my-1">LVF</h5>
-                  <p>Collage Name</p>
-                </div>
+              <div className="ps-3 ">
+                {expData.map((d, i) => {
+                  return (
+                    <div
+                      className="d-flex box py-3 gap-5 align-items-center"
+                      key={i}
+                    >
+                      <div className="circle">{d.id}</div>
+                      <div className="content">
+                        <p>{d.year}</p>
+                        <h6 className="my-1">{d.company}</h6>
+                        <p className="small">{d.designation}</p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-              <div className="d-flex box py-3 gap-5 align-items-center">
-                <div className="circle">03</div>
-                <div className="content">
-                  <p>2018 - 2022</p>
-                  <h5 className="my-1">LVF</h5>
-                  <p>Collage Name</p>
-                </div>
+            </Col>
+            <Col lg={6} sm={12}>
+              <div className="d-flex align-items-center  gap-2 mb-2 text-prime">
+                <FaSchool className="h4" />
+                <h6>Education</h6>
               </div>
+              {eduData.map((d, i) => {
+                return (
+                  <div
+                    className="d-flex box py-3 gap-5 align-items-center"
+                    key={i}
+                  >
+                    <div className="circle">{d.id}</div>
+                    <div className="content">
+                      <p>{d.batch}</p>
+                      <h6 className="my-1">{d.course}</h6>
+                      <p className="small">{d.collage}</p>
+                    </div>
+                  </div>
+                );
+              })}
               {/* <div className="ps-3 ">
                 <div className="box-edu  p-3 mb-3">
                   <p>Jan 2024 - Present</p>
@@ -60,49 +115,6 @@ const About = () => {
                 </div>
               </div> */}
             </Col>
-            <Col lg={6} sm={12}>
-              <div className="d-flex align-items-center  gap-2 mb-2 text-prime">
-                <MdWork className="h3" />
-                <h5>Work Experience</h5>
-              </div>
-              <div className="ps-3 ">
-                <div className="d-flex box py-3 gap-5 align-items-center">
-                  <div className="circle">03</div>
-                  <div className="content">
-                    <p>2018 - 2022</p>
-                    <h5 className="my-1">LVF</h5>
-                    <p>position</p>
-                  </div>
-                </div>
-                <div className="d-flex box py-3 gap-5 align-items-center">
-                  <div className="circle">03</div>
-                  <div className="content">
-                    <p>2018 - 2022</p>
-                    <h5 className="my-1">LVF</h5>
-                    <p>position</p>
-                  </div>
-                </div>
-                <div className="d-flex box py-3 gap-5 align-items-center">
-                  <div className="circle">03</div>
-                  <div className="content">
-                    <p>2018 - 2022</p>
-                    <h5 className="my-1">LVF</h5>
-                    <p>position</p>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            {/* <Col lg={5} sm={12} className="pt-5">
-  
-              <h6 className="mb-3">Work Experience</h6>
-              <div className="d-flex box py-3 gap-5 align-items-center mb-4">
-                <div className="circle">01</div>
-                <div className="content">
-                  <p> Jan 2024 - Present</p>
-                  <h5>Zebec</h5>
-                </div>
-              </div>
-            </Col> */}
           </Row>
         </Container>
       </section>
