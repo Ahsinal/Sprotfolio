@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Certificates from "./pages/Certificates";
 import Guidance from "./pages/Guidance";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/certificates" element={<Certificates />} />
-        <Route path="/guidance" element={<Guidance/>} />
+        <Route path="/guidance" element={<Guidance />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
