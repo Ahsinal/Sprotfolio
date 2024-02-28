@@ -1,5 +1,4 @@
 import { Container, Col, Row, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <>
@@ -15,7 +14,7 @@ const Intro = () => {
               <h2>Hi There, I'm</h2>
               <h1 className="display-3 fw-normal">Sagar Parajuli</h1>
               <h3>
-                a{" "}
+                a
                 <span className="ms-1" style={{ color: "#1E2581" }}>
                   Software QA Engineer
                 </span>
@@ -27,19 +26,21 @@ const Intro = () => {
                 excellence in every code line."
               </p>
               <div className="">
-                <Link
+                <a
+                  as="Link"
                   href="assets/cv.pdf"
                   download="cv.pdf"
                   className="me-4 btn btn-outline "
                 >
                   Download CV
-                </Link>
-                <Link
-                  href="/contact"
+                </a>
+                <a
+                  as="Link"
+                  href="#contact"
                   className="me-4 btn  btn-md btn-block text-white"
                 >
                   Hire Me
-                </Link>
+                </a>
               </div>
             </Col>
           </Row>

@@ -7,55 +7,54 @@ import {
   MdVerified,
   MdWork,
 } from "react-icons/md";
-import { Link } from "react-router-dom";
 const Menu = ({ menuOpen, setMenuOpen }) => {
   const menuItem = [
     {
       id: 1,
       element: "Profile",
-      href: "profile",
+      href: "#profile",
       icon: <FaHome />,
     },
     {
       id: 2,
       element: "About Me",
-      href: "about",
+      href: "#about",
       icon: <IoPersonCircle />,
     },
     {
       id: 3,
       element: "What I DO",
-      href: "services",
+      href: "#services",
       icon: <MdVerified />,
     },
     {
       id: 4,
       element: "Skills",
-      href: "services",
+      href: "#services",
       icon: <FaAward />,
     },
     {
       id: 5,
       element: "Projects",
-      href: "projects",
+      href: "#projects",
       icon: <MdWork />,
     },
     {
       id: 6,
       element: "Certification",
-      href: "certification",
+      href: "/certification",
       icon: <MdCardGiftcard />,
     },
     {
       id: 7,
       element: "QA Guidelines ",
-      href: "guidance",
+      href: "/guidance",
       icon: <MdTipsAndUpdates />,
     },
     {
       id: 8,
       element: "Contact",
-      href: "contact",
+      href: "#contact",
       icon: <MdConnectWithoutContact />,
     },
   ];
@@ -69,13 +68,14 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             className="p-2 mb-4 rounded-1 "
           >
             <span className="h5">{d.icon} </span>
-            <Link href={`#${d.href}`}>{d.element}</Link>
+            <a as="Link" href={d.href}>
+              {d.element}
+            </a>
           </li>
         ))}
       </ul>
       <div className="menu-footer">
         <p className="small">
-          {" "}
           Copyright © 2024 Sagar Parajuli | All rights are reserved | Designed
           by Lanisha Koirala.
         </p>

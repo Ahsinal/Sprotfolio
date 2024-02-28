@@ -9,9 +9,9 @@ const Header = ({ menuOpen, setMenuOpen }) => {
       <div className={"navbarr " + (menuOpen && "active")}>
         <div className="wrapper">
           <div className="left">
-            <Link href="#intro" className="logo">
+            <a as="Link" href="/" className="logo">
               SP
-            </Link>
+            </a>
             <div className=" d-none d-lg-flex">
               <div className="itemContainer ">
                 <IoPersonCircle className="icon" />

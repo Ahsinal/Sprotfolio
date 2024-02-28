@@ -11,18 +11,18 @@ const Footer = () => {
         </p>
 
         <div className="d-flex gap-2 h5">
-          <Link href="">
+          <a href="/" as="Link" target="blank">
             <FaFacebook className="icon text-white" />
-          </Link>
-          <Link href="">
+          </a>
+          <a href="/" as="Link" target="blank">
             <FaLinkedin className="icon text-white" />
-          </Link>
-          <Link href="">
+          </a>
+          <a href="/" as="Link" target="blank">
             <FaGithub className="icon text-white" />
-          </Link>
-          <Link href="">
+          </a>
+          <a href="/" as="Link" target="blank">
             <FaWhatsapp className="icon text-white" />
-          </Link>
+          </a>
         </div>
       </Container>
     </section>
