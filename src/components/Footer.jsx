@@ -5,9 +5,11 @@ const Footer = () => {
   return (
     <section className="footer py-3 ">
       <Container className="d-flex align-items-center justify-content-between  text-white ">
-        <p className="p-0 m-0">
-          Copyright © 2024 Sagar Parajuli | All rights are reserved.
+        <p className="p-0 m-0 text-white">
+          Copyright © 2024 Sagar Parajuli | All rights are reserved | Designed
+          by Lanisha Koirala
         </p>
+
         <div className="d-flex gap-2 h5">
           <Link href="">
             <FaFacebook className="icon text-white" />

@@ -9,7 +9,7 @@
     .imgContainer {
         width: 700px;
         height: 700px;
-        background-color: rgb(157, 230, 238);
+        background-color: #C7C9E1;
         border-radius: 50%;
         display: flex;
         align-items: flex-end;
@@ -108,11 +108,16 @@
 .projects {
 
     // background-color: rgb(246, 242, 242);
+    .arrow {
+        cursor: pointer;
+    }
+
     .project-card {
         cursor: pointer;
         box-shadow: 4px 4px 4px rgba(107, 106, 106, 0.1);
         border: 1px solid rgb(241, 239, 239);
         background-color: #FAFAFB;
+        overflow: hidden;
 
         &:hover {
             img {
@@ -134,10 +139,12 @@
                 object-position: center;
                 transition: all ease-in-out 0.5s;
             }
+
+
         }
 
         .project-detail {
-            min-height: 14rem;
+            min-height: 11rem;
 
             h6 {
                 color: #1F2580;

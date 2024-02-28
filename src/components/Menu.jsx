@@ -74,7 +74,11 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         ))}
       </ul>
       <div className="menu-footer">
-        <p> Copyright © 2024 Sagar Parajuli | All rights are reserved.</p>
+        <p className="small">
+          {" "}
+          Copyright © 2024 Sagar Parajuli | All rights are reserved | Designed
+          by Lanisha Koirala.
+        </p>
       </div>
     </div>
   );

@@ -8,10 +8,10 @@ const Contact = () => {
   return (
     <section className="py-4 contact" id="contact">
       <Container>
-        <h6 className="text-prime"> Contact</h6>
+        <h6 className="text-prime mb-0"> Contact</h6>
         <Row className="gx-5 align-items-center">
           <Col lg={5} sm={12} className="d-flex flex-column ">
-            <div className="contact-img mb-3">
+            <div className="contact-img mb-2">
               <img
                 src="https://img.freepik.com/free-photo/connect-incoming-call-communication-concept_53876-125112.jpg?t=st=1709013385~exp=1709016985~hmac=2d5a37561349400ab6f0f9cdd3acac7b02668b4cfb56b62e355cd8d4e4884801&w=1480"
                 alt="contact-img"
@@ -66,8 +66,7 @@ const Contact = () => {
                 <FormControl as="textarea" rows="6" required />
               </div>
               <Button
-                className="btn btn-xs rounded-12 text-white"
-                variant="info"
+                className="btn btn-xs rounded-12 btn-block text-white"
                 type="submit"
               >
                 Send Message

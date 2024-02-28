@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(31, 37, 128);
+    background-color: #4851b7;
     color: white;
 }
 
@@ -14,4 +14,26 @@ p {
     padding-bottom: 0;
     font-weight: 300;
     color: #3E3C3C;
+}
+
+.btn-outline {
+    border: 1px solid #4851B7 !important;
+    color: #4851B7 !important;
+    transition: all ease-in-out 0.3s !important;
+
+    &:hover {
+        background-color: #4851B7 !important;
+        color: white !important;
+    }
+}
+
+.btn-block {
+    background-color: #4851B7 !important;
+    transition: all ease-in-out 0.3s !important;
+
+    &:hover {
+        border: 1px solid #4851B7 !important;
+        background-color: white !important;
+        color: #4851B7 !important;
+    }
 }

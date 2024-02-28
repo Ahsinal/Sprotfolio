@@ -15,7 +15,10 @@ const Intro = () => {
               <h2>Hi There, I'm</h2>
               <h1 className="display-3 fw-normal">Sagar Parajuli</h1>
               <h3>
-                a <span className="ms-1 text-info">Software QA Engineer</span>
+                a{" "}
+                <span className="ms-1" style={{ color: "#1E2581" }}>
+                  Software QA Engineer
+                </span>
               </h3>
               <p>
                 "Enhancing software quality with meticulous testing and
@@ -27,14 +30,13 @@ const Intro = () => {
                 <Link
                   href="assets/cv.pdf"
                   download="cv.pdf"
-                  className="me-4 btn btn-outline-info btn-md"
+                  className="me-4 btn btn-outline "
                 >
                   Download CV
                 </Link>
                 <Link
-                  href="contact"
-                  className="me-4 btn  btn-md text-white"
-                  style={{"backgroundColor":"#1F2580"}}
+                  href="/contact"
+                  className="me-4 btn  btn-md btn-block text-white"
                 >
                   Hire Me
                 </Link>
