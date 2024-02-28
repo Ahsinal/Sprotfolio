@@ -30,52 +30,52 @@ const Services = () => {
     {
       id: "1",
       img: "",
-      title: "",
+      title: "tool1",
     },
     {
       id: "2",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "3",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "4",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "5",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "6",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "7",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "8",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "9",
       img: "",
-      title: "",
+      title: "tool",
     },
     {
       id: "10",
       img: "",
-      title: "",
+      title: "tool",
     },
   ];
   const secondarySkills = [
@@ -130,6 +130,9 @@ const Services = () => {
       title: "",
     },
   ];
+  const renderTooltip = (title) => (
+    <Tooltip id={`tooltip-${title}`}>{title}</Tooltip>
+  );
   return (
     <section className="services py-5" id="services">
       <Container>
@@ -154,22 +157,34 @@ const Services = () => {
           <div className="d-flex justify-content-center gap-4 mt-1">
             {primarySkills.slice(0, 6).map((d, i) => {
               return (
-                <div className="tool-box">
-                  <div className="tool-image p-2" key={i}>
-                    <img src={d.img} alt="tools" />
+                <OverlayTrigger
+                  key={i}
+                  placement="bottom"
+                  overlay={renderTooltip(d.title)}
+                >
+                  <div className="tool-box">
+                    <div className="tool-image p-2">
+                      <img src={d.img} alt="tools" />
+                    </div>
                   </div>
-                </div>
+                </OverlayTrigger>
               );
             })}
           </div>
           <div className="d-flex justify-content-center gap-4 mt-2 mb-4">
             {primarySkills.slice(6, 11).map((d, i) => {
               return (
-                <div className="tool-box" key={i}>
-                  <div className="tool-image p-2">
-                    <img src="" alt="tools" />
+                <OverlayTrigger
+                  key={i}
+                  placement="bottom"
+                  overlay={renderTooltip(d.title)}
+                >
+                  <div className="tool-box">
+                    <div className="tool-image p-2">
+                      <img src="" alt="tools" />
+                    </div>
                   </div>
-                </div>
+                </OverlayTrigger>
               );
             })}
           </div>
@@ -177,11 +192,17 @@ const Services = () => {
           <div className="d-flex justify-content-center gap-4 mt-1">
             {secondarySkills.map((d, i) => {
               return (
-                <div className="tool-box" key={i}>
-                  <div className="tool-image p-2">
-                    <img src="/assets/tools/github.png" alt="tools" />
+                <OverlayTrigger
+                  key={i}
+                  placement="bottom"
+                  overlay={renderTooltip(d.title)}
+                >
+                  <div className="tool-box" key={i}>
+                    <div className="tool-image p-2">
+                      <img src="/assets/tools/github.png" alt="tools" />
+                    </div>
                   </div>
-                </div>
+                </OverlayTrigger>
               );
             })}
           </div>
