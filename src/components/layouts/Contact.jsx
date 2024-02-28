@@ -1,10 +1,40 @@
-import { Container } from "react-bootstrap";
+import { useState } from "react";
+import {
+  Container,
+  Col,
+  Row,
+  Button,
+  FormControl,
+  FormLabel,
+  Modal,
+} from "react-bootstrap";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import Form from "react-bootstrap/Form";
-import { Col, Row, Button, FormControl, FormLabel } from "react-bootstrap";
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [modalShow, setModalShow] = useState(false);
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Perform any necessary form validation here
+    // Once validated, show the modal
+    setModalShow(true);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <section className="py-4 contact" id="contact">
       <Container>
@@ -48,7 +78,7 @@ const Contact = () => {
           </Col>
           <Col lg={7} sm={12} className="p-5">
             <h5>Lets Work together.</h5>
-            <Form>
+            <Form onSubmit={handleFormSubmit}>
               <div className="mb-2">
                 <FormLabel htmlFor="">Full Name</FormLabel>
                 <FormControl type="text" required />
@@ -73,6 +103,20 @@ const Contact = () => {
               </Button>
             </Form>
           </Col>
+          <Modal show={modalShow} onHide={() => setModalShow(false)}>
+            <Modal.Header closeButton>
+              <Modal.Title>Thank You!</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              Thanks for contacting me. I'll get back to you as soon as
+              possible.
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="primary" onClick={() => setModalShow(false)}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </Row>
       </Container>
     </section>
