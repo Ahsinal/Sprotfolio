@@ -131,7 +131,9 @@ const Services = () => {
     },
   ];
   const renderTooltip = (title) => (
-    <Tooltip id={`tooltip-${title}`}>{title}</Tooltip>
+    <Tooltip id={`tooltip-${title}`}>
+      <div > {title}</div>
+    </Tooltip>
   );
   return (
     <section className="services py-5" id="services">

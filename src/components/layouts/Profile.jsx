@@ -16,8 +16,11 @@ const Intro = () => {
               <h1 className="display-3 fw-normal">Sagar Parajuli</h1>
               <h3>
                 a
-                <span className="ms-1" style={{ color: "#1E2581" }}>
-                  Software QA Engineer
+                <span
+                  className="ms-1"
+                  style={{ color: "#1E2581", fontWeight: "bold" }}
+                >
+                  {/* Software QA Engineer */}
                 </span>
               </h3>
               <p>
